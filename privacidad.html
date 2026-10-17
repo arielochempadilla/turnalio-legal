@@ -22,18 +22,19 @@
   </nav>
 
   <h1 class="doc-title">Política de privacidad</h1>
-  <div class="updated">Última actualización: 31 de agosto de 2026</div>
+  <div class="updated">Última actualización: 17 de octubre de 2026</div>
 
   <h3>1. Resumen</h3>
-  <p>Turnalio no recopila, no almacena ni comparte ninguna información personal de sus usuarios en servidores propios. Toda la información que ingresas en la app (fechas de turno, sueldo, feriados, alarmas, trabajo, etc.) queda guardada únicamente en tu propio teléfono. Nosotros, como desarrolladores, no tenemos acceso a esos datos en ningún momento.</p>
+  <p>Turnalio no recopila, no almacena ni comparte ninguna información personal de sus usuarios en servidores propios. Toda la información que ingresas en la app (fechas de turno, sueldo, feriados, alarmas, trabajo, etc.) queda guardada únicamente en tu propio teléfono. Nosotros, como desarrolladores, no tenemos acceso a esos datos en ningún momento. Las compras de Turnalio Pro se procesan íntegramente a través de Google Play (ver punto 5).</p>
 
   <h3>2. Qué información maneja la app y dónde queda guardada</h3>
-  <p>Turnalio funciona completamente en tu dispositivo. La información que configuras —fecha de inicio de tu ciclo de turno, tipo de jornada, días marcados como feriado o extra, horarios de alarmas, y los datos que ingresas en la calculadora de pagos (sueldo base, AFP, sistema de salud, bonos, descuentos, etc.)— se guarda exclusivamente en el almacenamiento local de tu teléfono. Esta información nunca se envía a un servidor nuestro, porque no operamos ninguno.</p>
+  <p>Turnalio funciona completamente en tu dispositivo. La información que configuras —fecha de inicio de tu ciclo de turno, tipo de jornada, días marcados como feriado o extra, horarios de alarmas y la programación de las próximas alarmas, y los datos que ingresas en la calculadora de pagos (sueldo base, AFP, sistema de salud, bonos, descuentos, etc.)— se guarda exclusivamente en el almacenamiento local de tu teléfono. Esta información nunca se envía a un servidor nuestro, porque no operamos ninguno.</p>
 
   <h3>3. Qué NO hacemos</h3>
   <ul>
     <li>No creamos cuentas de usuario ni pedimos que te registres.</li>
     <li>No solicitamos ni recopilamos tu nombre, RUT, correo electrónico, número de teléfono ni ningún otro dato de identificación.</li>
+    <li>No recibimos ni guardamos los datos de tu medio de pago (tarjeta, cuenta, etc.).</li>
     <li>No tenemos acceso a la información que ingresas en la app.</li>
     <li>No vendemos, arrendamos ni compartimos información con terceros, porque no la recopilamos.</li>
     <li>No usamos rastreadores publicitarios, identificadores de publicidad ni herramientas de perfilamiento de usuario.</li>
@@ -43,25 +44,30 @@
   <h3>4. Función "Compartir" de la planilla de pagos</h3>
   <p>Turnalio permite compartir la imagen de tu liquidación estimada por donde tú elijas (WhatsApp, correo electrónico, almacenamiento, etc.). Esta función utiliza exclusivamente el selector de aplicaciones nativo de Android: la imagen se entrega directamente a la aplicación que elijas, sin pasar por ningún servidor nuestro y sin que quede registro de qué compartiste, con quién ni por qué medio. No es un botón de red social con seguimiento, sino la misma función de "compartir archivo" que usa cualquier aplicación del sistema.</p>
 
-  <h3>5. Servicios externos que la app sí consulta</h3>
-  <p>Para mostrarte valores actualizados (como la UF, la UTM, o la comisión de tu AFP), Turnalio consulta dos fuentes públicas: <strong>mindicador.cl</strong> (valor de la UF y la UTM) y un archivo de referencia público alojado en <strong>GitHub</strong> (comisiones de AFP, topes imponibles y tabla de Impuesto Único). Estas consultas son de solo lectura: la app pide un valor público y no les envía ningún dato tuyo.</p>
+  <h3>5. Compras y suscripciones (Turnalio Pro)</h3>
+  <p>Las compras dentro de la app (la suscripción mensual Modo Pro y el Pro temporal) se procesan a través del sistema de facturación de <strong>Google Play</strong>, con la cuenta de Google que usas en tu teléfono. El pago, los datos de tu medio de pago, tu nombre y tu correo los gestiona Google según su propia política de privacidad (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>); nosotros no recibimos esos datos.</p>
+  <p>Para activar las funciones que compraste, la app recibe de Google Play únicamente la información técnica de la compra: qué producto es, su estado (activa, pendiente, cancelada) y un código de compra. Esa información se guarda solo en tu teléfono, para que Turnalio Pro siga funcionando aunque no tengas conexión, y no se envía a ningún servidor nuestro.</p>
+  <p>Para conectarse con Google Play, la app incluye la biblioteca oficial de facturación de Google (Google Play Billing). Esta biblioteca puede enviar a Google información técnica de diagnóstico sobre el funcionamiento del proceso de compra, conforme a las políticas de Google. Las suscripciones se administran y cancelan desde Google Play.</p>
 
-  <h3>6. Permisos del sistema que pide la app</h3>
-  <p>Turnalio pide algunos permisos de Android (programar alarmas exactas, mostrar notificaciones, ejecutarse en segundo plano, ignorar la optimización de batería) exclusivamente para que las alarmas de tu turno suenen de forma confiable. Ninguno se usa para recopilar información sobre ti o tu actividad.</p>
+  <h3>6. Servicios externos que la app sí consulta</h3>
+  <p>Para mostrarte valores actualizados (como la UF, la UTM, o la comisión de tu AFP), Turnalio consulta dos fuentes públicas: <strong>mindicador.cl</strong> (valor de la UF y la UTM) y un archivo de referencia público alojado en <strong>GitHub</strong> (comisiones de AFP, topes imponibles y tabla de Impuesto Único). Estas consultas son de solo lectura: la app pide un valor público y no les envía ningún dato tuyo. Además, la app se comunica con Google Play para las compras, como se explica en el punto 5.</p>
 
-  <h3>7. Seguridad</h3>
-  <p>Turnalio no realiza copias de respaldo de tus datos en la nube (el backup automático de Android está desactivado para esta app). Las consultas a los servicios externos del punto 5 viajan cifradas (HTTPS).</p>
+  <h3>7. Permisos del sistema que pide la app</h3>
+  <p>Turnalio pide algunos permisos de Android (programar alarmas exactas, mostrar notificaciones y la pantalla completa de la alarma, ejecutarse en segundo plano mientras suena una alarma, volver a programar las alarmas al reiniciar el teléfono, ignorar la optimización de batería) exclusivamente para que las alarmas de tu turno suenen de forma confiable. También usa el permiso de facturación de Google Play y el acceso a la red para poder realizar y verificar compras. Ninguno se usa para recopilar información sobre ti o tu actividad.</p>
 
-  <h3>8. Tu control sobre la información</h3>
-  <p>Como toda la información vive únicamente en tu teléfono, tienes control total sobre ella: puedes borrarla desde <strong>Ajustes del sistema → Aplicaciones → Turnalio → Borrar datos/almacenamiento</strong>, o simplemente desinstalando la app. Al hacerlo, la información desaparece por completo, ya que no existe ninguna copia en otro lugar.</p>
+  <h3>8. Seguridad</h3>
+  <p>Turnalio no realiza copias de respaldo de tus datos en la nube (el backup automático de Android está desactivado para esta app). Las consultas a los servicios externos de los puntos 5 y 6 viajan cifradas (HTTPS).</p>
 
-  <h3>9. Menores de edad</h3>
+  <h3>9. Tu control sobre la información</h3>
+  <p>Como toda la información vive únicamente en tu teléfono, tienes control total sobre ella: puedes borrarla desde <strong>Ajustes del sistema → Aplicaciones → Turnalio → Borrar datos/almacenamiento</strong>, o simplemente desinstalando la app. Al hacerlo, la información desaparece por completo, ya que no existe ninguna copia en otro lugar. Tus compras no se pierden: quedan asociadas a tu cuenta de Google y se recuperan con "Restaurar compras" al volver a instalar la app.</p>
+
+  <h3>10. Menores de edad</h3>
   <p>Turnalio no está dirigida a menores de edad y no recopila intencionalmente información de menores, dado que no recopila información de ningún usuario.</p>
 
-  <h3>10. Cambios a esta política</h3>
+  <h3>11. Cambios a esta política</h3>
   <p>Si esta política cambia, la nueva versión se publicará dentro de la app y en esta misma página, con su fecha de actualización correspondiente.</p>
 
-  <h3>11. Contacto</h3>
+  <h3>12. Contacto</h3>
   <p>Ante cualquier consulta sobre esta política, puedes escribir a <a href="mailto:turnalioapp@gmail.com">turnalioapp@gmail.com</a>.</p>
 
   <footer>Turnalio · <a href="mailto:turnalioapp@gmail.com">turnalioapp@gmail.com</a></footer>
