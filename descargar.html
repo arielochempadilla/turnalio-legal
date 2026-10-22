@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descargar Turnalio</title>
+<meta name="description" content="Turnalio: calendario de turnos, alarmas y liquidación de sueldo. Gratis en Google Play.">
+<meta property="og:title" content="Descarga Turnalio gratis">
+<meta property="og:description" content="Turnos, alarmas y tu liquidación al detalle. Gratis en Google Play.">
+<meta property="og:image" content="https://arielochempadilla.github.io/turnalio-legal/turnalio-icon.png">
+<link rel="icon" href="turnalio-icon.png">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: #0b1224; color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 20px; text-align: center; }
+  img { width: 120px; height: 120px; border-radius: 28px; }
+  h1 { font-size: 34px; margin: 18px 0 6px; }
+  p { color: #cbd5e1; font-size: 17px; margin: 0 0 28px; line-height: 1.4; }
+  .btn { display: inline-block; background: #facc15; color: #1e293b; font-weight: 800; font-size: 19px;
+    text-decoration: none; padding: 16px 28px; border-radius: 999px; }
+  .alt { margin-top: 18px; font-size: 14px; color: #94a3b8; }
+  .alt a { color: #60a5fa; }
+</style>
+</head>
+<body>
+<main>
+  <img src="turnalio-icon.png" alt="Turnalio">
+  <h1>Turnalio</h1>
+  <p>Turnos, alarmas y tu liquidación al detalle.<br>Gratis en Google Play.</p>
+  <a id="btn" class="btn" href="https://play.google.com/store/apps/details?id=com.turnalio.app">Descargar en Google Play</a>
+  <div class="alt">¿No se abrió? <a href="https://play.google.com/store/apps/details?id=com.turnalio.app">Toca aquí</a></div>
+</main>
+<script>
+  (function () {
+    var web = 'https://play.google.com/store/apps/details?id=com.turnalio.app';
+    var esAndroid = /android/i.test(navigator.userAgent);
+    // En Android abre directo la app de Play Store; si no está, cae a la ficha web.
+    var destino = esAndroid
+      ? 'intent://details?id=com.turnalio.app#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' + encodeURIComponent(web) + ';end'
+      : web;
+    document.getElementById('btn').href = destino;
+    // Intento automático apenas abre la página (algunos navegadores internos lo bloquean: queda el botón).
+    window.location.replace(destino);
+  })();
+</script>
+</body>
+</html>
